@@ -26,6 +26,6 @@ jobs:
           # exit-zero treats all errors as warnings. The GitHub editor is 127 chars wide
           flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics --ignore=E309,E501,E402,F401
       - name: Build and run the project
-        run: python -u src/main_file.py
+        run: python -u src/main.py
       - name: Running unittests
         run: python -u test/unit_test.py
